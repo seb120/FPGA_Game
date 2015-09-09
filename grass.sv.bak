@@ -1,0 +1,3 @@
+module  grass( input[9:0] DrawX, DrawY,
+				output logic grass_on);
+				

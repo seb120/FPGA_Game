@@ -1,0 +1,2 @@
+module  grid( input[9:0] DrawX, DrawY,
+				output logic grid_on);

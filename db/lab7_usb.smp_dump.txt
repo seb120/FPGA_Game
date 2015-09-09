@@ -1,0 +1,96 @@
+
+State Machine - |lab7_usb|Game_entity_table:pm_instance|chNXstate
+Name chNXstate.ch8 chNXstate.ch7 chNXstate.ch6 chNXstate.ch5 chNXstate.ch4 chNXstate.ch3 chNXstate.ch2 chNXstate.ch1 
+chNXstate.ch1 0 0 0 0 0 0 0 0 
+chNXstate.ch2 0 0 0 0 0 0 1 1 
+chNXstate.ch3 0 0 0 0 0 1 0 1 
+chNXstate.ch4 0 0 0 0 1 0 0 1 
+chNXstate.ch5 0 0 0 1 0 0 0 1 
+chNXstate.ch6 0 0 1 0 0 0 0 1 
+chNXstate.ch7 0 1 0 0 0 0 0 1 
+chNXstate.ch8 1 0 0 0 0 0 0 1 
+
+State Machine - |lab7_usb|Game_entity_table:pm_instance|chXstate
+Name chXstate.ch8 chXstate.ch7 chXstate.ch6 chXstate.ch5 chXstate.ch4 chXstate.ch3 chXstate.ch2 chXstate.ch1 
+chXstate.ch1 0 0 0 0 0 0 0 0 
+chXstate.ch2 0 0 0 0 0 0 1 1 
+chXstate.ch3 0 0 0 0 0 1 0 1 
+chXstate.ch4 0 0 0 0 1 0 0 1 
+chXstate.ch5 0 0 0 1 0 0 0 1 
+chXstate.ch6 0 0 1 0 0 0 0 1 
+chXstate.ch7 0 1 0 0 0 0 0 1 
+chXstate.ch8 1 0 0 0 0 0 0 1 
+
+State Machine - |lab7_usb|Game_entity_table:pm_instance|ch_next_state
+Name ch_next_state.chD ch_next_state.chC ch_next_state.chB ch_next_state.chA ch_next_state.chR 
+ch_next_state.chA 0 0 0 0 0 
+ch_next_state.chB 0 0 1 1 0 
+ch_next_state.chC 0 1 0 1 0 
+ch_next_state.chD 1 0 0 1 0 
+ch_next_state.chR 0 0 0 1 1 
+
+State Machine - |lab7_usb|Game_entity_table:pm_instance|ch_curr_state
+Name ch_curr_state.chA ch_curr_state.chD ch_curr_state.chC ch_curr_state.chB ch_curr_state.chR 
+ch_curr_state.chR 0 0 0 0 0 
+ch_curr_state.chB 0 0 0 1 1 
+ch_curr_state.chC 0 0 1 0 1 
+ch_curr_state.chD 0 1 0 0 1 
+ch_curr_state.chA 1 0 0 0 1 
+
+State Machine - |lab7_usb|Game_entity_table:pm_instance|next_state
+Name next_state.D next_state.C next_state.B next_state.A 
+next_state.A 0 0 0 0 
+next_state.B 0 0 1 1 
+next_state.C 0 1 0 1 
+next_state.D 1 0 0 1 
+
+State Machine - |lab7_usb|Game_entity_table:pm_instance|curr_state
+Name curr_state.D curr_state.C curr_state.B curr_state.A 
+curr_state.A 0 0 0 0 
+curr_state.B 0 0 1 1 
+curr_state.C 0 1 0 1 
+curr_state.D 1 0 0 1 
+
+State Machine - |lab7_usb|usb_system:usbsys_instance|usb_system_cpu:cpu|usb_system_cpu_nios2_oci:the_usb_system_cpu_nios2_oci|usb_system_cpu_jtag_debug_module_wrapper:the_usb_system_cpu_jtag_debug_module_wrapper|usb_system_cpu_jtag_debug_module_tck:the_usb_system_cpu_jtag_debug_module_tck|DRsize
+Name DRsize.101 DRsize.100 DRsize.011 DRsize.010 DRsize.001 DRsize.000 
+DRsize.000 0 0 0 0 0 0 
+DRsize.001 0 0 0 0 1 1 
+DRsize.010 0 0 0 1 0 1 
+DRsize.011 0 0 1 0 0 1 
+DRsize.100 0 1 0 0 0 1 
+DRsize.101 1 0 0 0 0 1 
+
+State Machine - |lab7_usb|usb_system:usbsys_instance|usb_system_sdram:sdram|m_next
+Name m_next.010000000 m_next.000010000 m_next.000001000 m_next.000000001 
+m_next.000000001 0 0 0 0 
+m_next.000001000 0 0 1 1 
+m_next.000010000 0 1 0 1 
+m_next.010000000 1 0 0 1 
+
+State Machine - |lab7_usb|usb_system:usbsys_instance|usb_system_sdram:sdram|m_state
+Name m_state.100000000 m_state.010000000 m_state.001000000 m_state.000100000 m_state.000010000 m_state.000001000 m_state.000000100 m_state.000000010 m_state.000000001 
+m_state.000000001 0 0 0 0 0 0 0 0 0 
+m_state.000000010 0 0 0 0 0 0 0 1 1 
+m_state.000000100 0 0 0 0 0 0 1 0 1 
+m_state.000001000 0 0 0 0 0 1 0 0 1 
+m_state.000010000 0 0 0 0 1 0 0 0 1 
+m_state.000100000 0 0 0 1 0 0 0 0 1 
+m_state.001000000 0 0 1 0 0 0 0 0 1 
+m_state.010000000 0 1 0 0 0 0 0 0 1 
+m_state.100000000 1 0 0 0 0 0 0 0 1 
+
+State Machine - |lab7_usb|usb_system:usbsys_instance|usb_system_sdram:sdram|i_next
+Name i_next.111 i_next.101 i_next.010 i_next.000 
+i_next.000 0 0 0 0 
+i_next.010 0 0 1 1 
+i_next.101 0 1 0 1 
+i_next.111 1 0 0 1 
+
+State Machine - |lab7_usb|usb_system:usbsys_instance|usb_system_sdram:sdram|i_state
+Name i_state.111 i_state.101 i_state.011 i_state.010 i_state.001 i_state.000 
+i_state.000 0 0 0 0 0 0 
+i_state.001 0 0 0 0 1 1 
+i_state.010 0 0 0 1 0 1 
+i_state.011 0 0 1 0 0 1 
+i_state.101 0 1 0 0 0 1 
+i_state.111 1 0 0 0 0 1 
